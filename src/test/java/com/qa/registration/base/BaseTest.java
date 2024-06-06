@@ -10,7 +10,6 @@ import org.testng.annotations.BeforeTest;
 import com.qa.registration.factory.DriverFactory;
 import com.qa.registration.pages.AccountPage;
 import com.qa.registration.pages.LoginPage;
-import com.qa.registration.pages.RegistrationPage;
 import com.qa.registration.pages.SearchProduct;
 import com.qa.registration.pages.productInfo;
 import com.qa.registration.utility.ElementUtill;
@@ -25,7 +24,7 @@ public class BaseTest {
 	 */
 	WebDriver driver;
 	protected Properties prop;
-	protected RegistrationPage RegistrationPage;
+//	protected RegistrationPage RegistrationPage;
 	protected LoginPage LoginPg;
 	protected AccountPage accPage;
 	protected SearchProduct SerchProd;
@@ -42,7 +41,7 @@ public class BaseTest {
 		driver=drF.initDriver(prop);
 		
 		LoginPg=new LoginPage(driver);
-		RegistrationPage  = new RegistrationPage (driver);
+//		RegistrationPage  = new RegistrationPage (driver);
 		
 		/*driver = new ChromeDriver();
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/register");

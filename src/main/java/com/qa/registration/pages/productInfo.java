@@ -23,17 +23,17 @@ public class productInfo {
 	eleUtill= new ElementUtill(driver);
 	}
 
-	public String getProdHeader() {
-		String prodhead= eleUtill.getText(productHeader);
-		return prodhead;
-	}
-	
-	public int getProductImageCount() {
-		int ProductCount= eleUtill.waitForElementVisibleNotListUsing(productImage, AppConstants.MEDIUM_TME_OUT).size();
-		System.out.println("Total product images for "+ProductCount);	
-		return ProductCount;
-	}
-	
+//	public String getProdHeader() {
+//		String prodhead= eleUtill.getText(productHeader);
+//		return prodhead;
+//	}
+//	
+//	public int getProductImageCount() {
+//		int ProductCount= eleUtill.waitForElementVisibleNotListUsing(productImage, AppConstants.MEDIUM_TME_OUT).size();
+//		System.out.println("Total product images for "+ProductCount);	
+//		return ProductCount;
+//	}
+//	
 	public String getTitle()
 	{
 		String Tit= driver.getTitle();
