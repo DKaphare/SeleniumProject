@@ -18,7 +18,7 @@ public class DriverFactory {
 	public WebDriver initDriver(Properties prop) {
 		String browserName = prop.getProperty("Browser");
 		System.out.println("Browser name is " + browserName);
-		switch (browserName.toLowerCase()) {
+		switch (browserName) {
 		case "chrome":
 			driver = new ChromeDriver();
 			break;
@@ -54,7 +54,7 @@ public class DriverFactory {
 			if (envName == null) {
 				System.out.println("no env is given");
 				ip = new FileInputStream(
-						"C:\\Users\\HP\\eclipse-workspace\\POM_Series\\src\\main\\resource\\config\\config.properties");
+						"C:\\Users\\HP\\eclipse-workspace\\TutorialsPoint\\src\\main\\resource\\config\\configTP.properties");
 			} else {
 				switch (envName.toLowerCase().trim()) {
 				case "qa":
