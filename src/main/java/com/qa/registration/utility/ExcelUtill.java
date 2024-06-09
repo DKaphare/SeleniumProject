@@ -42,10 +42,7 @@ public class ExcelUtill {
 					
 					
 				}
-			}
-				
-				
-				
+			}	
 				
 			} catch (EncryptedDocumentException e) {
 				// TODO Auto-generated catch block
