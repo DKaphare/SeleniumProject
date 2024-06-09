@@ -18,11 +18,11 @@ public class SearchProduct {
 		this.driver = driver;
 		eleUtill= new ElementUtill(driver);
 	}
-
-	public void getAccPageHeadeCount() {
-		eleUtill.waitForElementVisible1(resultCount, AppConstants.MEDIUM_TME_OUT);
-		eleUtill.doClick(productName);
-	}
+//
+//	public void getAccPageHeadeCount() {
+//		eleUtill.waitForElementVisible1(resultCount, AppConstants.MEDIUM_TME_OUT);
+//		eleUtill.doClick(productName);
+//	}
 
 	public productInfo K (String productName) {
 		return new productInfo(driver);
