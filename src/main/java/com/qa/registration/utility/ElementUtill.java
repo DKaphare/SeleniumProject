@@ -2,7 +2,9 @@ package com.qa.registration.utility;
 
 import java.sql.Driver;
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -31,15 +33,23 @@ public class ElementUtill {
 		getElement(locator).click();
 	}
 
-	public void doSendKeys(By locator, String values) {
+	public void doSendKeys(By locator, String strings) {
 
-		if (values == null) {
+		if (strings == null) {
 			System.out.println("Values can not be null");
 //				throw new FRAMEWORKEXCEPTION("VALUECANNOTBENULL");
 		}
-		getElement(locator).sendKeys(values);
+		getElement(locator).sendKeys(strings);
 	}
 
+	public void doSendKeysArray(By locator,String string ) {
+
+		if (string == null) {
+			System.out.println("Values can not be null");
+//				throw new FRAMEWORKEXCEPTION("VALUECANNOTBENULL");
+		}
+		getElement(locator).sendKeys(string);
+	}
 	public  WebElement getElement(By locator) {
 		return driver.findElement(locator);
 	}
@@ -214,5 +224,16 @@ public class ElementUtill {
 		}
 		return ActualText;
 
+	}
+	
+	public void window() {
+		
+		Set<String> it= driver.getWindowHandles();
+		Iterator<String> k=it.iterator();
+				
+				
+				String PW= k.next();
+				String CW=k.next();
+			driver.switchTo().window(CW);
 	}
 }

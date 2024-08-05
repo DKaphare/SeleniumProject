@@ -34,15 +34,18 @@ public class DriverFactory {
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-//		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/register");
-		driver.get(prop.getProperty("URL"));
+		String URL=prop.getProperty("URL");
+		driver.get(URL);
+//		driver.get("https://www.orangehrm.com/");
+//		driver.get(prop.getProperty("URL"));
 //	driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 //		
 		return driver;
 
 	}
 
-	public Properties initProp() {
+	public Properties initProp() { //Properties default class in java . globally declare variable of that 
+									
 		FileInputStream ip = null;
 		prop = new Properties();
 		
