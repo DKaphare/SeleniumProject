@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeTest;
 
 import com.qa.registration.factory.Drive;
 import com.qa.registration.pages.CRMLogin;
+import com.qa.registration.pages.CountResult;
 import com.qa.registration.pages.HomePage;
 import com.qa.registration.pages.Images;
 import com.qa.registration.utility.ElementUtill;
@@ -25,6 +26,7 @@ public class BaseTest {
 	protected HomePage HP;
 	protected Images I;
 	protected CRMLogin CRM;
+	protected CountResult CR;
 
 
 	/*
@@ -42,6 +44,7 @@ public class BaseTest {
 		HP = new HomePage(driver);
 		I=new Images(driver);
 		CRM=new CRMLogin(driver);
+		CR=new CountResult(driver);
 
 	}
 
