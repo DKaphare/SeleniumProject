@@ -11,8 +11,9 @@ public class HomePgProduct extends BaseTest {
 	@Test
 	public void SearchProduct() {
 		HP.productClick(prop.getProperty("SearchKey"));
-
+		CR.result();
 	}
 	
+
 	
 }

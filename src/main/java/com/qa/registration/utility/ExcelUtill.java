@@ -12,7 +12,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class ExcelUtill {
 
 	//Step 1 -pth of excel ->give ->("./" before the file name),copy file name from src
-	public static final String TEST_DATA_SHEET_PATH="./src/main/resource/TestData/RegistrationData.xlsx";
+	public static final String TEST_DATA_SHEET_PATH="./src/main/resource/TestData/LoginData.xlsx";
 	public static Workbook book;
 	public static Sheet sheet;
 	
@@ -42,10 +42,7 @@ public class ExcelUtill {
 					
 					
 				}
-			}
-				
-				
-				
+			}	
 				
 			} catch (EncryptedDocumentException e) {
 				// TODO Auto-generated catch block
