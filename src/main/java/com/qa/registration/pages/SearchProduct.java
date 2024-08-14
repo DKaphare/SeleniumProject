@@ -24,7 +24,7 @@ public class SearchProduct {
 //		eleUtill.doClick(productName);
 //	}
 
-	public productInfo K (String productName) {
-		return new productInfo(driver);
-	}
+//	public productInfo K (String productName) {
+//		return new productInfo(driver);
+//	}
 }
